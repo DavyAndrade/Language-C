@@ -17,17 +17,28 @@ consumida durante a viagem;
 #include <stdlib.h>
 
 int main() {
-    float percurso, distancia, custoLitro;
+    float percurso, consumoKmPorLitro, precoLitro, consumo, custo;
 
-    printf("Informe o percurso (Ex: 1.4): ");
+    // Solicitar informações ao usuário
+    printf("Informe o percurso da viagem (em quilometros): ");
     scanf("%f", &percurso);
     fflush(stdin);
 
-    printf("Informe a distancia que percorre com um litro (Ex: 1.2): ");
-    scanf("%f", &distancia);
+    printf("Informe o consumo do carro (em km/l): ");
+    scanf("%f", &consumoKmPorLitro);
     fflush(stdin);
 
-    printf("Informe o preco do litro do combustivel (Ex: 60.99): ");
-    scanf("%f", &custoLitro);
+    printf("Informe o preco do litro de combustivel: ");
+    scanf("%f", &precoLitro);
+    fflush(stdin);
 
+    // Calcular o consumo de combustível em litros
+    consumo = percurso / consumoKmPorLitro;
+
+    // Calcular o custo total de combustível
+    custo = consumo * precoLitro;
+
+    // Exibir os resultados
+    printf("Quantidade de combustivel consumida (litros): %.2f\n", consumo);
+    printf("Custo total de combustivel: R$%.2f\n", custo);
 }

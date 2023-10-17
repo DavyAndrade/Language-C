@@ -1,3 +1,31 @@
+/*
+QUESTÃO 03:
+Implementar um programa que leia um valor
+inteiro n1. Se este não estiver no intervalo de
+100 a 999, uma mensagem deve ser exibida ao
+usuário informando que o número é inválido e,
+em seguida, a execução do programa terminará.
+Caso o valor esteja no intervalo definido, o
+
+programa deverá criar um novo valor n2 (e exibi-
+lo ao final) contendo os mesmos algarismos de
+
+n1, porém em ordem crescente.
+Exemplos:
+n1 514
+n2 145
+
+n1 929
+n2 299
+
+n1 124
+n2 124
+Nota:
+Como definido no enunciado, n1 consiste em um
+número inteiro positivo, com 3 algarismos. n2
+também será um único número!
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
