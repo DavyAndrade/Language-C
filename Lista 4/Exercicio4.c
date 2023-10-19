@@ -15,7 +15,7 @@ int main() {
     int i, negativos=0, positivos;
     float media, num, soma=0;
 
-    for (i=1; i<=5; i++) {
+    for (i=1; i<=300; i++) {
         printf("%i de 5 - Digite um valor: ", i); 
         scanf("%f", &num);
 
